@@ -25,3 +25,16 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+.NarbarMenu__menu {
+  display: flex;
+  gap: 8px;
+}
+.NarbarMenu__menu a{
+  color: white;
+  text-decoration-line: none;
+  transition: 300ms;
+}
+.NarbarMenu__menu a:hover {
+  color: teal;
+}
