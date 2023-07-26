@@ -6,17 +6,21 @@ const NarbarMenu = () => {
     return (
         <Navbar bg='dark' variant='dark'>
             <Navbar.Brand> My Next App </Navbar.Brand>
+            
             <Nav className='NarbarMenu__menu'>
-                <Link href='/' passHref>
-                    Home 
-                </Link>
+                
                 <Link href='/posts' passHref>
                     Posts 
                 </Link>
                 <Link href='/about' passHref>
                     About
                 </Link>
-
+                <Link href='/jokes/random' passHref>
+                    Ịokes
+                </Link>
+                <Link href='/' passHref>
+                    Home 
+                </Link>
             </Nav>
         </Navbar>
     )
