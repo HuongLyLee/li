@@ -10,7 +10,9 @@ const Posts = (props) => {
          {props.posts?.map(post => (
             <Card key={post?.id}> 
                 <Card.Body>
-                    <Card.Title> {post?.Title} </Card.Title>
+                    <Card.Title> 
+                        {post.id} -- {post?.Title} 
+                    </Card.Title>
                     <Card.Text>  {post?.body}  </Card.Text>
                     <Link href={`/posts/${post.id}`} passHref> 
                         <Card.Link> See more </Card.Link>
@@ -25,7 +27,7 @@ const Posts = (props) => {
 // get static data from backend /db /api
 // lay du lieu tĩnh
 export const getStaticProps = async() => {
-    const posts = await getPosts()
+    const posts = await getPosts(10)
     
     return {
         props: {

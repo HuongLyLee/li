@@ -33,7 +33,7 @@ export const getStaticPaths = async() => {
         fallback: false // bat ky path nao k returned boi getStaticPaths se toi trang 404 
     }
 }
-
+ 
 
 export const getStaticProps = async ({params}) => {
     const post = await getPostByid(params.id)

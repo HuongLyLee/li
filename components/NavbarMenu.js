@@ -16,7 +16,10 @@ const NarbarMenu = () => {
                     About
                 </Link>
                 <Link href='/jokes/random' passHref>
-                    Ịokes
+                    Jokes
+                </Link>
+                <Link href='/books' passHref>
+                    Book
                 </Link>
                 <Link href='/' passHref>
                     Home 

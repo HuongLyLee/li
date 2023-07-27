@@ -18,7 +18,7 @@ const RandomPage = ({joke}) => {
   )
 }
 
-// lay du lieu kieu dong : du liue phu thuoc vao moi lan request 
+// lay du lieu kieu dong : du lieu phu thuoc vao moi lan request 
 // van tao ra HTML tinh cho front-end, nen van tot cho SEO 
 export const getServerSideProps = async () => {
     const joke = await getRandomJoke()
