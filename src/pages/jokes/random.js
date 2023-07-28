@@ -22,6 +22,22 @@ const RandomPage = ({joke}) => {
 // van tao ra HTML tinh cho front-end, nen van tot cho SEO 
 export const getServerSideProps = async () => {
     const joke = await getRandomJoke()
+    // joke = false 
+
+    if (!joke)
+    return {
+        notFound: true   // 404 page
+    }
+
+    // neu  joke bi loi thi tu dong sang post
+    // return {
+    //     redirect: {
+    //         destination: '/posts',
+    //         permanent: false
+    //     }
+    // }
+
+    // tra ve cac joke 
     return {
         props: {
             joke
